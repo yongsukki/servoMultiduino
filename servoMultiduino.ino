@@ -8,6 +8,10 @@ Servo myservoUD; //Up Down Servo
 int posUD = 10; // Minimum Limit on Upper
 int posLR = 90; // Init Center Position
 
+// Define Servo Pin
+int pinnoUD = 10;
+int pinnoLR = 9;
+
 String readString, selector, position, sbuffer;
 
 int move;
@@ -18,8 +22,8 @@ void setup()
     Serial.begin(9600); // initialize serial communications at 9600 bps:
 
     // Arduino Pin No.
-    myservoUD.attach(10);
-    myservoLR.attach(9);
+    myservoUD.attach(pinnoUD);
+    myservoLR.attach(pinnoLR);
 
     // wait 1sec
     delay(1000);
