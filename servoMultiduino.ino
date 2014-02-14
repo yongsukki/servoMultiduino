@@ -4,13 +4,13 @@
 Servo myservoLR; //Left Right Servo
 Servo myservoUD; //Up Down Servo
 
-// Initial & Limit Value
-int posUD = 10; // Minimum Limit on Upper
-int posLR = 90; // Init Center Position
-
 // Define Servo Pin
 int pinnoUD = 10;
 int pinnoLR = 9;
+
+// Initial & Limit Value
+int posUD = 10; // Minimum Limit on Upper
+int posLR = 90; // Init Center Position
 
 String readString, selector, position, sbuffer;
 
