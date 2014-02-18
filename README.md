@@ -21,6 +21,8 @@ II. SoftWare
 
 III. Using Code
  On Raspberrypi
+ 0. python-serial
+  $ sudo apt-get install python-serial -y
  1. Cloning git source code
   $ git clone https://github.com/rasplay/servoMultiduino.git
  2. Compile and Upload on Atmega328p
