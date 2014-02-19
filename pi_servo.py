@@ -3,6 +3,7 @@ import Servo
 
 def main():
     servo = Servo.SERVO(9600, 2.0)
+    print "Connected"
 
     # Initial Position
     UDpos=90
@@ -14,6 +15,7 @@ def main():
         # Increase Position
         UDpos += 1
         LRpos += 1
+        print "UDpos : %d" % UDpos
 
         # Limit Position Set
         if ( UDpos > 180 ):
